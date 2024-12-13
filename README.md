@@ -1,2 +1,2 @@
-# Foro-Hub---Challenge---Back-End
+# Foro Hub  Challenge  Back-End
 Challenge de Oracle + AluraLatam
