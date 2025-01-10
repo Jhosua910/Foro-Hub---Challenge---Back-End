@@ -19,7 +19,8 @@ Foro API es una aplicación backend desarrollada en Java que proporciona funcion
 
 ## **Capturas de Pantalla**  
 <!-- Agrega aquí capturas de la interfaz de Swagger o ejemplos de respuestas JSON -->
-![Swagger UI](ruta/a/tu/imagen.png)
+![Swagger UI](/assets/screenshot0.png)
+![Swagger UI](/assets/screenshot1.png)
 
 ---
 
@@ -29,7 +30,8 @@ Foro API es una aplicación backend desarrollada en Java que proporciona funcion
 - 📦 **Maven**  
 - 🌱 **Spring Boot**  
 - 🔒 **Spring Security**  
-- 📜 **Spring Doc** para la documentación interactiva de la API.  
+- 📜 **Spring Doc** para la documentación interactiva de la API.
+- 🗄️ **PostgreSQL** como base de datos relacional.
 
 ---
 
@@ -37,20 +39,30 @@ Foro API es una aplicación backend desarrollada en Java que proporciona funcion
 
 ### **1. Requisitos Previos**
 - Java 21 instalado.  
-- Maven configurado.  
-- IntelliJ IDEA (opcional pero recomendado).  
+- Maven configurado.
+- PostgreSQL instalado y configurado.
+- IntelliJ IDEA (opcional pero recomendado).
 
-### **2. Clonar el Repositorio**
+### **2. Configuración de PostgreSQL**
+1. Crea una base de datos llamada `foro_api`.  
+2. Configura las credenciales en el archivo `application.properties` o `application.yml` del proyecto:  
+   ```properties
+   spring.datasource.url=jdbc:postgresql://localhost:8080/foro_api
+   spring.datasource.username=tu_usuario
+   spring.datasource.password=tu_contraseña
+   spring.jpa.hibernate.ddl-auto=update
+
+### **3. Clonar el Repositorio**
 
     git clone https://github.com/tu_usuario/foro-api.git
     cd foro-api
 
-### **3. Construir y Ejecutar el Proyecto**
+### **4. Construir y Ejecutar el Proyecto**
 
     ./mvnw clean install
     ./mvnw spring-boot:run
 
-### **4. Acceso a la API**
+### **5. Acceso a la API**
 
 La API estará disponible en:
 
